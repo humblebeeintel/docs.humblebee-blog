@@ -1,0 +1,87 @@
+site_name: Humblebee AI - Blog
+site_description: 'This repository is for "blog.humblebee.ai" technical blog.'
+site_url: https://blog.humblebee.ai
+repo_name: humblebeeintel/docs.humblebee-blog
+repo_url: https://github.com/humblebeeintel/docs.humblebee-blog
+theme:
+  name: material
+  # name: readthedocs
+  language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
+  logo: assets/images/logo.png
+  favicon: assets/images/logo.png
+  icon:
+    # logo: fontawesome/brands/python
+    repo: fontawesome/brands/github
+  features:
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    # - navigation.tabs.sticky
+    # - navigation.sections
+    # - navigation.expand
+    - toc.follow
+    # - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    - media: "(prefers-color-scheme)"
+      primary: orange
+      accent: orange
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: orange
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: orange
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+markdown_extensions:
+  - md_in_html
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - assets/js/mathjax.js
+  - assets/js/tex-mml-chtml.js
+plugins:
+  - search
+  - tags
+  - meta
+  - mkdocstrings
+  - awesome-nav
+  # - literate-nav
+  - blog:
+      blog_dir: blog
+      post_date_format: medium
+      archive_date_format: yyyy/MM
+      archive_url_date_format: yyyy/MM
+      blog_toc: true

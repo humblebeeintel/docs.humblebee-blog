@@ -1,0 +1,30 @@
+PROPRIETARY LICENSE AGREEMENT
+
+Copyright (c) 2025 Humblebee AI Inc. All rights reserved.
+
+This documentation, including all accompanying files, designs, diagrams, specifications, and related materials (collectively, the "Documentation"), is the proprietary information of Humblebee AI Inc ("Company") and is protected under intellectual property laws and international treaties.
+
+LICENSE GRANT
+The Documentation is licensed, not sold. Subject to your compliance with this Agreement, you are granted a limited, non-transferable, non-exclusive license to internally use and reference the Documentation solely for authorized business purposes related to the Company.
+
+RESTRICTIONS
+You may not:
+- Copy, modify, distribute, or publicly display the Documentation;
+- Use the Documentation to develop or promote competing products or services;
+- Reverse engineer, decompile, or attempt to derive intellectual property from the Documentation;
+- Remove or obscure any proprietary notices.
+
+NO WARRANTY
+The Documentation is provided "AS IS" without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.
+
+CONFIDENTIALITY
+The Documentation contains confidential and proprietary information. You agree to maintain its confidentiality and take reasonable steps to protect it from unauthorized use or disclosure.
+
+PATENTS
+Nothing in this license grants any rights under any Company patents, whether expressly, by implication, estoppel, or otherwise.
+
+TERMINATION
+This license will terminate immediately if you fail to comply with any term of this Agreement. Upon termination, you must destroy all copies of the Documentation.
+
+CONTACT
+For licensing inquiries, contact: legal@humblebee.ai.

@@ -1,0 +1,26 @@
+name: 2. Create Release
+
+on:
+  workflow_run:
+    workflows: ["1. Bump Version"]
+    types:
+      - completed
+    branches:
+      - main
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build_publish:
+    name: Create Release
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Create release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release create v$(./scripts/get-version.sh) --generate-notes
