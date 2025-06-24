@@ -71,15 +71,15 @@ markdown_extensions:
       generic: true
 extra_javascript:
   - assets/js/mathjax.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - assets/js/tex-mml-chtml.js
 plugins:
   - search
   - tags
   - meta
+  - mkdocstrings
   - awesome-nav
   # - literate-nav
   - blog:
-      blog_dir: blog
       post_date_format: medium
       archive_date_format: yyyy/MM
       archive_url_date_format: yyyy/MM
