@@ -34,7 +34,4 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          mkdocs gh-deploy --force
-        #  _major_minor_version="$(./scripts/get-version.sh | cut -d. -f1-2)"
-        #  mike deploy -p -u ${_major_minor_version} latest
-        #  mike set-default -p latest
+          ./scripts/build.sh -p

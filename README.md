@@ -1,5 +1,8 @@
 # Humblebee AI - Blog
 
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/bybatkhuu/docs.humblebee-blog/4.publish-docs.yml?logo=GitHub)](https://github.com/bybatkhuu/docs.humblebee-blog/actions/workflows/4.publish-docs.yml)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/bybatkhuu/docs.humblebee-blog?logo=GitHub&color=blue)](https://github.com/bybatkhuu/docs.humblebee-blog/releases)
+
 This repository is for "blog.humblebee.ai" technical blog.
 
 ## ✨ Features
