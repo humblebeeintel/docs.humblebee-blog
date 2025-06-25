@@ -1,14 +1,15 @@
 ---
 date:
-    created: 2025-01-01T01:00:00
-    updated: 2025-01-31T01:00:00
+    created: 2025-06-25T15:00:00+09:00
+    updated: 2025-06-25T15:50:00+09:00
 authors:
   - bybatkhuu
 categories:
-  - Example
+  - Samples
 tags:
-  - example
-readtime: 3
+  - sample
+  - nothing
+  - lorem
 ---
 
 # My First Post
