@@ -77,10 +77,15 @@ plugins:
   - tags
   - meta
   - mkdocstrings
-  - awesome-nav
+  # - awesome-nav
   # - literate-nav
   - blog:
       post_date_format: medium
       archive_date_format: yyyy/MM
       archive_url_date_format: yyyy/MM
       blog_toc: true
+nav:
+  - Home: README.md
+  - Blog:
+      - blog/index.md
+  - Release Notes: release-notes.md
