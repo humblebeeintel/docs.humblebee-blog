@@ -76,8 +76,8 @@ plugins:
   - meta
   - tags
   - search
-  - mkdocstrings
   - awesome-nav
+  # - mkdocstrings
   # - literate-nav
   - redirects:
       redirect_maps:
