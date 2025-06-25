@@ -1,3 +1,7 @@
+ignore:
+  - README.md
+
 nav:
   - Blog: blog/
+  - "*"
   - Release Notes: release-notes.md
