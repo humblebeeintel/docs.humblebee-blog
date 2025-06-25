@@ -85,7 +85,7 @@ mkdocs serve -a 0.0.0.0:8000
 ```sh
 mkdocs build
 # Or:
-./scripts/docs.sh -b
+./scripts/build.sh
 
 # Check the generated HTML files (it should be in the `site` directory):
 ls -al ./site
@@ -100,7 +100,9 @@ cp -r ./site/* /var/www/blog.humblebee.ai/public
 rsync -av --delete ./site/ /var/www/blog.humblebee.ai/public/
 
 # Or deploy the documentation to GitHub Pages (default branch: gh-pages) of this repository:
-mkdocs gh-deploy
+mkdocs gh-deploy --force
+# Or:
+./scripts/build.sh -p
 ```
 
 👍

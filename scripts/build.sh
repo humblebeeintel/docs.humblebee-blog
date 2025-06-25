@@ -14,10 +14,10 @@ if [ -z "$(which mkdocs)" ]; then
 	exit 1
 fi
 
-if [ -z "$(which mike)" ]; then
-	echo "[ERROR]: 'mike' not found or not installed."
-	exit 1
-fi
+# if [ -z "$(which mike)" ]; then
+# 	echo "[ERROR]: 'mike' not found or not installed."
+# 	exit 1
+# fi
 ## --- Base --- ##
 
 
@@ -60,11 +60,11 @@ main()
 
 	if [ "${_IS_PUBLISH}" == true ]; then
 		echo "[INFO]: Publishing documentation pages to the GitHub Pages..."
-		# mkdocs gh-deploy --force
+		mkdocs gh-deploy --force
 
-		_major_minor_version="$(./scripts/get-version.sh | cut -d. -f1-2)"
-		mike deploy -p -u "${_major_minor_version}" latest
-		mike set-default -p latest
+		# _major_minor_version="$(./scripts/get-version.sh | cut -d. -f1-2)"
+		# mike deploy -p -u "${_major_minor_version}" latest
+		# mike set-default -p latest
 
 		if [ "${_IS_CLEAN}" == true ]; then
 			./scripts/clean.sh || exit 2
