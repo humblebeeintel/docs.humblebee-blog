@@ -5,9 +5,9 @@ date:
 authors:
   - bybatkhuu
 categories:
-  - Samples
+  - Examples
 tags:
-  - sample
+  - example
   - nothing
   - lorem
 ---
