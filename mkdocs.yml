@@ -52,21 +52,38 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
 markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
   - md_in_html
+  - footnotes
+  - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.blocks.caption
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.arithmatex:
       generic: true
 extra_javascript:
@@ -78,7 +95,6 @@ plugins:
   - search
   - awesome-nav
   # - mkdocstrings
-  # - literate-nav
   - redirects:
       redirect_maps:
         index.md: blog/index.md
@@ -86,7 +102,6 @@ plugins:
       post_excerpt: required
       post_excerpt_max_authors: 3
       post_date_format: medium
-      post_url_format: "{date}/{slug}"
       archive_date_format: yyyy/MM
       archive_url_date_format: yyyy/MM
       blog_toc: true
@@ -105,3 +120,20 @@ plugins:
       #   - Tips
       #   - Examples
       #   - Others
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/humblebeeintel
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/humblebeeai
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/user/humblebee
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/humblebeeai
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@HumbleBeeAI/videos
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/humblebeeai
+copyright: Copyright &copy; 2025 Humblebee AI

@@ -93,17 +93,13 @@ ls -al ./site
 
 ### 7. 🚀 Deploy the documentation
 
-```sh
-# Copy the generated HTML files to the web server:
-cp -r ./site/* /var/www/blog.humblebee.ai/public
-# Or use rsync:
-rsync -av --delete ./site/ /var/www/blog.humblebee.ai/public/
+If you make any changes to **`docs/*`** or **`mkdocs.yml`**, it will automatically re-deploy the new changes to GitHub Pages when you push to the **`main`** branch.
 
-# Or deploy the documentation to GitHub Pages (default branch: gh-pages) of this repository:
-mkdocs gh-deploy --force
-# Or:
-./scripts/build.sh -p
-```
+### 8. ✅ Verify the deployment
+
+- Wait for a few minutes until the GitHub Actions workflow is completed.
+- Then go to <https://blog.humblebee.ai> and verify the changes.
+- If you don't see the changes, try to clear the browser cache or do a hard refresh (e.g. `Cmd + Shift + R` on macOS, or `Ctrl + F5` on Windows).
 
 👍
 
