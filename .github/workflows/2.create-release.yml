@@ -14,13 +14,17 @@ on:
 jobs:
   build_publish:
     name: Create Release
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+      - name: Get latest version
+        run: |
+          git pull origin main
+          echo "Current version: v$(./scripts/get-version.sh)"
       - name: Create release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release create v$(./scripts/get-version.sh) --generate-notes
+        run: ./scripts/release.sh

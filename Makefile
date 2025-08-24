@@ -1,4 +1,4 @@
-.PHONY: help clean get-version bump-version docs changelog all
+.PHONY: help clean get-version bump-version docs build release changelog all
 
 help:
 	@echo "make help         -- show this help"
@@ -6,6 +6,8 @@ help:
 	@echo "make get-version  -- get current version"
 	@echo "make bump-version -- bump version"
 	@echo "make docs         -- build documentation"
+	@echo "make build        -- build the documentation"
+	@echo "make release      -- create github release"
 	@echo "make changelog    -- update changelog"
 	@echo "make all          -- clean, get-version, build"
 
@@ -21,7 +23,13 @@ bump-version:
 docs:
 	./scripts/docs.sh $(MAKEFLAGS)
 
+build:
+	./scripts/build.sh $(MAKEFLAGS)
+
+release:
+	./scripts/release.sh $(MAKEFLAGS)
+
 changelog:
 	./scripts/changelog.sh $(MAKEFLAGS)
 
-all: clean get-version docs
+all: clean get-version build docs
